@@ -1,0 +1,146 @@
+2021-01-27 18:23:47.187 [main] INFO  Service() -  #jdk.disabled.namedCurves. 
+2021-01-27 18:23:47.636 [main] INFO  ChannelConnections() -  all connections: [ConnectionInfo{host='127.0.0.1', port=20200}]
+2021-01-27 18:23:47.777 [main] INFO  ChannelConnections() -  ca certificate: ca.crt, sdk certificate: node.crt, sdk key: node.key
+2021-01-27 18:23:49.368 [main] ERROR ChannelConnections() -  connect to 127.0.0.1:20200, error: Connection refused: /127.0.0.1:20200
+2021-01-27 18:23:49.368 [main] ERROR ChannelConnections() -  all connections have failed, [Connection refused: /127.0.0.1:20200]
+2021-01-27 18:23:49.369 [main] ERROR Service() -  service init failed, error message:  Failed to connect to nodes: [Connection refused: /127.0.0.1:20200]The reasons for failure may be: 
+	1. the configured certificate is not the same set of certificates as the node's certificate; 
+	2. the configured certificate is not issued by the same authority as the node's certificate. 
+	Please refer to https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/sdk/java_sdk.html#id24 
+, error: 
+java.lang.RuntimeException:  Failed to connect to nodes: [Connection refused: /127.0.0.1:20200]The reasons for failure may be: 
+	1. the configured certificate is not the same set of certificates as the node's certificate; 
+	2. the configured certificate is not issued by the same authority as the node's certificate. 
+	Please refer to https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/sdk/java_sdk.html#id24 
+
+	at org.fisco.bcos.channel.handler.ChannelConnections.startConnect(ChannelConnections.java:488) ~[web3sdk-2.6.2.jar:?]
+	at org.fisco.bcos.channel.client.Service.run(Service.java:340) [web3sdk-2.6.2.jar:?]
+	at com.webank.webase.front.base.config.Web3Config.getWeb3j(Web3Config.java:116) [WeBASE-Front.jar:?]
+	at com.webank.webase.front.base.config.Web3Config$$EnhancerBySpringCGLIB$$5ca439e4.CGLIB$getWeb3j$8(<generated>) [WeBASE-Front.jar:?]
+	at com.webank.webase.front.base.config.Web3Config$$EnhancerBySpringCGLIB$$5ca439e4$$FastClassBySpringCGLIB$$3db10f02.invoke(<generated>) [WeBASE-Front.jar:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) [spring-core-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) [spring-context-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at com.webank.webase.front.base.config.Web3Config$$EnhancerBySpringCGLIB$$5ca439e4.getWeb3j(<generated>) [WeBASE-Front.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:757) [spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) [spring-context-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) [spring-context-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:123) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:666) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:353) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:300) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1082) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1071) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at com.webank.webase.front.Application.main(Application.java:47) [WeBASE-Front.jar:?]
+2021-01-27 18:26:12.243 [main] INFO  Service() -  #jdk.disabled.namedCurves. 
+2021-01-27 18:26:12.524 [main] INFO  ChannelConnections() -  all connections: [ConnectionInfo{host='127.0.0.1', port=20200}]
+2021-01-27 18:26:12.587 [main] INFO  ChannelConnections() -  ca certificate: ca.crt, sdk certificate: node.crt, sdk key: node.key
+2021-01-27 18:26:15.210 [nioEventLoopGroup-2-1] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20200, ctx: 1650908817
+2021-01-27 18:26:15.213 [nioEventLoopGroup-2-1] INFO  ConnectionCallback() -  connect 127.0.0.1:20200 success, ctx: 1650908817
+2021-01-27 18:26:15.350 [nioEventLoopGroup-2-1] INFO  ConnectionCallback() -  query node version host: 127.0.0.1:20200, seq: d4cb67dbc03a4df691807621d4a09608, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":0}
+2021-01-27 18:26:15.440 [sdkThreadPool-1] INFO  ConnectionCallback() -  node: Version [buildTime=20201126 08:00:45, buildType=Linux/clang/Release, chainID=1, version=2.7.0, gitBranch=HEAD, gitCommit=0bc47666979df4766723adf1ab9c5d80f5e40537, supportedVersion=2.7.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20201126 08:00:45","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.7.0","Git Branch":"HEAD","Git Commit Hash":"0bc47666979df4766723adf1ab9c5d80f5e40537","Supported Version":"2.7.0"}}
+
+2021-01-27 18:26:15.456 [sdkThreadPool-1] INFO  ConnectionCallback() -  support channel handshake node: Version [buildTime=20201126 08:00:45, buildType=Linux/clang/Release, chainID=1, version=2.7.0, gitBranch=HEAD, gitCommit=0bc47666979df4766723adf1ab9c5d80f5e40537, supportedVersion=2.7.0], content: {"id":0,"jsonrpc":"2.0","result":{"Build Time":"20201126 08:00:45","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.7.0","Git Branch":"HEAD","Git Commit Hash":"0bc47666979df4766723adf1ab9c5d80f5e40537","Supported Version":"2.7.0"}}
+
+2021-01-27 18:26:15.500 [sdkThreadPool-2] INFO  ConnectionCallback() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.7.0, EnumProtocol=VERSION_3]
+2021-01-27 18:26:15.511 [sdkThreadPool-2] INFO  ConnectionCallback() -  send update topic message request, seq: 1325cfc5634e429e8c5bdce6d60a7910, content: ["_block_notify_2147483647"]
+2021-01-27 18:26:15.531 [main] INFO  Service() -  Connect to  nodes: [127.0.0.1:20200] ,groupId: 2147483647 ,caCert: null ,sslKey: null ,sslCert: null ,java version: 11.0.9.1 ,java vendor: Ubuntu
+2021-01-27 18:26:15.533 [sdkThreadPool-2] INFO  ConnectionCallback() -  query block number host: 127.0.0.1:20200, seq: 965b584f4267467dbabce0eb4ad35240, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[2147483647],"id":1}
+2021-01-27 18:26:15.832 [sdkThreadPool-5] INFO  ConnectionCallback() -  query blocknumer, host:127.0.0.1:20200, blockNumber: 0 
+2021-01-27 18:26:15.989 [main] INFO  Service() -  #jdk.disabled.namedCurves. 
+2021-01-27 18:26:15.995 [main] INFO  ChannelConnections() -  all connections: [ConnectionInfo{host='127.0.0.1', port=20200}]
+2021-01-27 18:26:15.996 [main] INFO  ChannelConnections() -  ca certificate: ca.crt, sdk certificate: node.crt, sdk key: node.key
+2021-01-27 18:26:16.463 [nioEventLoopGroup-3-1] INFO  ChannelHandler() -  handshake success, host: 127.0.0.1, port: 20200, ctx: 1814583163
+2021-01-27 18:26:16.464 [nioEventLoopGroup-3-1] INFO  ConnectionCallback() -  connect 127.0.0.1:20200 success, ctx: 1814583163
+2021-01-27 18:26:16.464 [nioEventLoopGroup-3-1] INFO  ConnectionCallback() -  query node version host: 127.0.0.1:20200, seq: f980d707621040358d93fe760fdad65d, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":4}
+2021-01-27 18:26:16.471 [sdkThreadPool-7] INFO  ConnectionCallback() -  node: Version [buildTime=20201126 08:00:45, buildType=Linux/clang/Release, chainID=1, version=2.7.0, gitBranch=HEAD, gitCommit=0bc47666979df4766723adf1ab9c5d80f5e40537, supportedVersion=2.7.0], content: {"id":4,"jsonrpc":"2.0","result":{"Build Time":"20201126 08:00:45","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.7.0","Git Branch":"HEAD","Git Commit Hash":"0bc47666979df4766723adf1ab9c5d80f5e40537","Supported Version":"2.7.0"}}
+
+2021-01-27 18:26:16.471 [sdkThreadPool-7] INFO  ConnectionCallback() -  support channel handshake node: Version [buildTime=20201126 08:00:45, buildType=Linux/clang/Release, chainID=1, version=2.7.0, gitBranch=HEAD, gitCommit=0bc47666979df4766723adf1ab9c5d80f5e40537, supportedVersion=2.7.0], content: {"id":4,"jsonrpc":"2.0","result":{"Build Time":"20201126 08:00:45","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.7.0","Git Branch":"HEAD","Git Commit Hash":"0bc47666979df4766723adf1ab9c5d80f5e40537","Supported Version":"2.7.0"}}
+
+2021-01-27 18:26:16.477 [sdkThreadPool-8] INFO  ConnectionCallback() -  channel protocol handshake success, set socket channel protocol, host: 127.0.0.1:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.7.0, EnumProtocol=VERSION_3]
+2021-01-27 18:26:16.479 [sdkThreadPool-8] INFO  ConnectionCallback() -  send update topic message request, seq: ec869d7a79c648bfb7bf6e07074fda43, content: ["_block_notify_1"]
+2021-01-27 18:26:16.482 [sdkThreadPool-8] INFO  ConnectionCallback() -  query block number host: 127.0.0.1:20200, seq: fa626a90f2eb4c349e86d23a80a3da33, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[1],"id":5}
+2021-01-27 18:26:16.484 [sdkThreadPool-9] INFO  ConnectionCallback() -  query blocknumer, host:127.0.0.1:20200, blockNumber: 68 
+2021-01-27 18:26:16.494 [main] INFO  Service() -  Connect to  nodes: [127.0.0.1:20200] ,groupId: 1 ,caCert: null ,sslKey: null ,sslCert: null ,java version: 11.0.9.1 ,java vendor: Ubuntu
+2021-01-27 18:26:16.820 [main] INFO  Async() -  default set setExeutor , pool size is 50
+2021-01-27 18:26:16.821 [main] INFO  Async() -  set setExeutor because executor null, executor is java.util.concurrent.ThreadPoolExecutor@4877731d[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]

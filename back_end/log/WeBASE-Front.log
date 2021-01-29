@@ -1,0 +1,643 @@
+2021-01-27 18:23:30.967 [main] INFO  Application() - Starting Application on liuhz-VirtualBox with PID 16969 (/home/liuhz/webase-front/apps/WeBASE-Front.jar started by liuhz in /home/liuhz/webase-front)
+2021-01-27 18:23:30.987 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2021-01-27 18:23:31.303 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext() - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c9168dc: startup date [Wed Jan 27 18:23:31 CST 2021]; root of context hierarchy
+2021-01-27 18:23:32.526 [background-preinit] INFO  Version() - HV000001: Hibernate Validator 5.3.6.Final
+2021-01-27 18:23:35.582 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker() - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$d55e3120] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 18:23:36.704 [main] INFO  TomcatEmbeddedServletContainer() - Tomcat initialized with port(s): 5002 (http)
+2021-01-27 18:23:37.244 [localhost-startStop-1] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 6016 ms
+2021-01-27 18:23:37.604 [localhost-startStop-1] INFO  ServletRegistrationBean() - Mapping servlet: 'dispatcherServlet' to [/]
+2021-01-27 18:23:37.611 [localhost-startStop-1] INFO  ServletRegistrationBean() - Mapping servlet: 'webServlet' to [/console/*]
+2021-01-27 18:23:37.615 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-01-27 18:23:37.615 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-01-27 18:23:37.615 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-01-27 18:23:37.615 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'requestContextFilter' to: [/*]
+2021-01-27 18:23:38.536 [main] INFO  LocalContainerEntityManagerFactoryBean() - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-01-27 18:23:38.586 [main] INFO  LogHelper() - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-01-27 18:23:38.757 [main] INFO  Version() - HHH000412: Hibernate Core {5.0.12.Final}
+2021-01-27 18:23:38.765 [main] INFO  Environment() - HHH000206: hibernate.properties not found
+2021-01-27 18:23:38.767 [main] INFO  Environment() - HHH000021: Bytecode provider name : javassist
+2021-01-27 18:23:38.847 [main] INFO  Version() - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-01-27 18:23:40.249 [main] INFO  Dialect() - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-01-27 18:23:40.934 [main] WARN  UUIDHexGenerator() - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2021-01-27 18:23:42.076 [main] INFO  SchemaUpdate() - HHH000228: Running hbm2ddl schema update
+2021-01-27 18:23:45.141 [main] INFO  LocalContainerEntityManagerFactoryBean() - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-27 18:23:46.141 [main] INFO  Web3Config() - *****init EncrytType:0
+2021-01-27 18:23:46.927 [main] INFO  Web3Config() - *****127.0.0.1:20200
+2021-01-27 18:23:47.166 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService
+2021-01-27 18:23:47.178 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'sdkThreadPool'
+2021-01-27 18:23:49.380 [main] WARN  AnnotationConfigEmbeddedWebApplicationContext() - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contractService': Unsatisfied dependency expressed through field 'transService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transService': Unsatisfied dependency expressed through field 'web3ApiService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'web3ApiService': Unsatisfied dependency expressed through field 'web3jMap'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'web3jMap' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Unsatisfied dependency expressed through method 'web3jMap' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serviceMap' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Unsatisfied dependency expressed through method 'serviceMap' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getWeb3j' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.fisco.bcos.web3j.protocol.Web3j]: Factory method 'getWeb3j' threw exception; nested exception is java.lang.RuntimeException:  Failed to connect to nodes: [Connection refused: /127.0.0.1:20200]The reasons for failure may be: 
+	1. the configured certificate is not the same set of certificates as the node's certificate; 
+	2. the configured certificate is not issued by the same authority as the node's certificate. 
+	Please refer to https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/sdk/java_sdk.html#id24 
+
+2021-01-27 18:23:49.386 [main] INFO  ThreadPoolTaskExecutor() - Shutting down ExecutorService 'sdkThreadPool'
+2021-01-27 18:23:49.387 [main] INFO  LocalContainerEntityManagerFactoryBean() - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-27 18:23:49.501 [main] INFO  AutoConfigurationReportLoggingInitializer() - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2021-01-27 18:23:49.506 [main] ERROR SpringApplication() - Application startup failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contractService': Unsatisfied dependency expressed through field 'transService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transService': Unsatisfied dependency expressed through field 'web3ApiService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'web3ApiService': Unsatisfied dependency expressed through field 'web3jMap'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'web3jMap' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Unsatisfied dependency expressed through method 'web3jMap' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serviceMap' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Unsatisfied dependency expressed through method 'serviceMap' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getWeb3j' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.fisco.bcos.web3j.protocol.Web3j]: Factory method 'getWeb3j' threw exception; nested exception is java.lang.RuntimeException:  Failed to connect to nodes: [Connection refused: /127.0.0.1:20200]The reasons for failure may be: 
+	1. the configured certificate is not the same set of certificates as the node's certificate; 
+	2. the configured certificate is not issued by the same authority as the node's certificate. 
+	Please refer to https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/sdk/java_sdk.html#id24 
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:757) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542) ~[spring-context-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:123) ~[spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:666) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:353) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:300) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1082) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1071) [spring-boot-1.5.22.RELEASE.jar:1.5.22.RELEASE]
+	at com.webank.webase.front.Application.main(Application.java:47) [WeBASE-Front.jar:?]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transService': Unsatisfied dependency expressed through field 'web3ApiService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'web3ApiService': Unsatisfied dependency expressed through field 'web3jMap'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'web3jMap' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Unsatisfied dependency expressed through method 'web3jMap' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serviceMap' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Unsatisfied dependency expressed through method 'serviceMap' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getWeb3j' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.fisco.bcos.web3j.protocol.Web3j]: Factory method 'getWeb3j' threw exception; nested exception is java.lang.RuntimeException:  Failed to connect to nodes: [Connection refused: /127.0.0.1:20200]The reasons for failure may be: 
+	1. the configured certificate is not the same set of certificates as the node's certificate; 
+	2. the configured certificate is not issued by the same authority as the node's certificate. 
+	Please refer to https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/sdk/java_sdk.html#id24 
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	... 19 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'web3ApiService': Unsatisfied dependency expressed through field 'web3jMap'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'web3jMap' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Unsatisfied dependency expressed through method 'web3jMap' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serviceMap' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Unsatisfied dependency expressed through method 'serviceMap' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getWeb3j' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.fisco.bcos.web3j.protocol.Web3j]: Factory method 'getWeb3j' threw exception; nested exception is java.lang.RuntimeException:  Failed to connect to nodes: [Connection refused: /127.0.0.1:20200]The reasons for failure may be: 
+	1. the configured certificate is not the same set of certificates as the node's certificate; 
+	2. the configured certificate is not issued by the same authority as the node's certificate. 
+	Please refer to https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/sdk/java_sdk.html#id24 
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	... 19 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'web3jMap' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Unsatisfied dependency expressed through method 'web3jMap' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serviceMap' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Unsatisfied dependency expressed through method 'serviceMap' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getWeb3j' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.fisco.bcos.web3j.protocol.Web3j]: Factory method 'getWeb3j' threw exception; nested exception is java.lang.RuntimeException:  Failed to connect to nodes: [Connection refused: /127.0.0.1:20200]The reasons for failure may be: 
+	1. the configured certificate is not the same set of certificates as the node's certificate; 
+	2. the configured certificate is not issued by the same authority as the node's certificate. 
+	Please refer to https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/sdk/java_sdk.html#id24 
+
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	... 19 more
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'serviceMap' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Unsatisfied dependency expressed through method 'serviceMap' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getWeb3j' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.fisco.bcos.web3j.protocol.Web3j]: Factory method 'getWeb3j' threw exception; nested exception is java.lang.RuntimeException:  Failed to connect to nodes: [Connection refused: /127.0.0.1:20200]The reasons for failure may be: 
+	1. the configured certificate is not the same set of certificates as the node's certificate; 
+	2. the configured certificate is not issued by the same authority as the node's certificate. 
+	Please refer to https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/sdk/java_sdk.html#id24 
+
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	... 19 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getWeb3j' defined in class path resource [com/webank/webase/front/base/config/Web3Config.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.fisco.bcos.web3j.protocol.Web3j]: Factory method 'getWeb3j' threw exception; nested exception is java.lang.RuntimeException:  Failed to connect to nodes: [Connection refused: /127.0.0.1:20200]The reasons for failure may be: 
+	1. the configured certificate is not the same set of certificates as the node's certificate; 
+	2. the configured certificate is not issued by the same authority as the node's certificate. 
+	Please refer to https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/sdk/java_sdk.html#id24 
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	... 19 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.fisco.bcos.web3j.protocol.Web3j]: Factory method 'getWeb3j' threw exception; nested exception is java.lang.RuntimeException:  Failed to connect to nodes: [Connection refused: /127.0.0.1:20200]The reasons for failure may be: 
+	1. the configured certificate is not the same set of certificates as the node's certificate; 
+	2. the configured certificate is not issued by the same authority as the node's certificate. 
+	Please refer to https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/sdk/java_sdk.html#id24 
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	... 19 more
+Caused by: java.lang.RuntimeException:  Failed to connect to nodes: [Connection refused: /127.0.0.1:20200]The reasons for failure may be: 
+	1. the configured certificate is not the same set of certificates as the node's certificate; 
+	2. the configured certificate is not issued by the same authority as the node's certificate. 
+	Please refer to https://fisco-bcos-documentation.readthedocs.io/zh_CN/latest/docs/sdk/java_sdk.html#id24 
+
+	at org.fisco.bcos.channel.handler.ChannelConnections.startConnect(ChannelConnections.java:488) ~[web3sdk-2.6.2.jar:?]
+	at org.fisco.bcos.channel.client.Service.run(Service.java:340) ~[web3sdk-2.6.2.jar:?]
+	at com.webank.webase.front.base.config.Web3Config.getWeb3j(Web3Config.java:116) ~[WeBASE-Front.jar:?]
+	at com.webank.webase.front.base.config.Web3Config$$EnhancerBySpringCGLIB$$5ca439e4.CGLIB$getWeb3j$8(<generated>) ~[WeBASE-Front.jar:?]
+	at com.webank.webase.front.base.config.Web3Config$$EnhancerBySpringCGLIB$$5ca439e4$$FastClassBySpringCGLIB$$3db10f02.invoke(<generated>) ~[WeBASE-Front.jar:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228) ~[spring-core-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358) ~[spring-context-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at com.webank.webase.front.base.config.Web3Config$$EnhancerBySpringCGLIB$$5ca439e4.getWeb3j(<generated>) ~[WeBASE-Front.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1071) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1257) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:551) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:211) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1135) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1063) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585) ~[spring-beans-4.3.27.RELEASE.jar:4.3.27.RELEASE]
+	... 19 more
+2021-01-27 18:25:57.623 [main] INFO  Application() - Starting Application on liuhz-VirtualBox with PID 17732 (/home/liuhz/webase-front/apps/WeBASE-Front.jar started by liuhz in /home/liuhz/webase-front)
+2021-01-27 18:25:57.635 [main] INFO  Application() - No active profile set, falling back to default profiles: default
+2021-01-27 18:25:57.794 [main] INFO  AnnotationConfigEmbeddedWebApplicationContext() - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c9168dc: startup date [Wed Jan 27 18:25:57 CST 2021]; root of context hierarchy
+2021-01-27 18:25:59.182 [background-preinit] INFO  Version() - HV000001: Hibernate Validator 5.3.6.Final
+2021-01-27 18:26:02.073 [main] INFO  PostProcessorRegistrationDelegate$BeanPostProcessorChecker() - Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$2406cdf1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-27 18:26:03.094 [main] INFO  TomcatEmbeddedServletContainer() - Tomcat initialized with port(s): 5002 (http)
+2021-01-27 18:26:03.544 [localhost-startStop-1] INFO  ContextLoader() - Root WebApplicationContext: initialization completed in 5774 ms
+2021-01-27 18:26:03.914 [localhost-startStop-1] INFO  ServletRegistrationBean() - Mapping servlet: 'dispatcherServlet' to [/]
+2021-01-27 18:26:03.917 [localhost-startStop-1] INFO  ServletRegistrationBean() - Mapping servlet: 'webServlet' to [/console/*]
+2021-01-27 18:26:03.920 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-01-27 18:26:03.921 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-01-27 18:26:03.921 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-01-27 18:26:03.921 [localhost-startStop-1] INFO  FilterRegistrationBean() - Mapping filter: 'requestContextFilter' to: [/*]
+2021-01-27 18:26:04.884 [main] INFO  LocalContainerEntityManagerFactoryBean() - Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-01-27 18:26:04.908 [main] INFO  LogHelper() - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-01-27 18:26:05.028 [main] INFO  Version() - HHH000412: Hibernate Core {5.0.12.Final}
+2021-01-27 18:26:05.029 [main] INFO  Environment() - HHH000206: hibernate.properties not found
+2021-01-27 18:26:05.032 [main] INFO  Environment() - HHH000021: Bytecode provider name : javassist
+2021-01-27 18:26:05.104 [main] INFO  Version() - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-01-27 18:26:06.311 [main] INFO  Dialect() - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-01-27 18:26:06.890 [main] WARN  UUIDHexGenerator() - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2021-01-27 18:26:07.769 [main] INFO  SchemaUpdate() - HHH000228: Running hbm2ddl schema update
+2021-01-27 18:26:10.694 [main] INFO  LocalContainerEntityManagerFactoryBean() - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-27 18:26:11.395 [main] INFO  Web3Config() - *****init EncrytType:0
+2021-01-27 18:26:12.056 [main] INFO  Web3Config() - *****127.0.0.1:20200
+2021-01-27 18:26:12.222 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService
+2021-01-27 18:26:12.233 [main] INFO  ThreadPoolTaskExecutor() - Initializing ExecutorService 'sdkThreadPool'
+2021-01-27 18:26:15.592 [main] INFO  Web3Config() - Chain's clientVersion:2.7.0
+2021-01-27 18:26:15.987 [main] INFO  Web3Config() - *****127.0.0.1:20200
+2021-01-27 18:26:15.988 [main] INFO  Web3Config() - ***** groupId:1
+2021-01-27 18:26:17.043 [main] WARN  NodeConfig() - cannot read config.ini
+2021-01-27 18:26:18.127 [main] INFO  QueryTranslatorFactoryInitiator() - HHH000397: Using ASTQueryTranslatorFactory
+2021-01-27 18:26:20.668 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/contract/deploy],methods=[POST]}" onto public java.lang.String com.webank.webase.front.contract.ContractController.deployLocal(com.webank.webase.front.contract.entity.ReqDeploy,org.springframework.validation.BindingResult) throws java.lang.Exception
+2021-01-27 18:26:20.669 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/contract/compile-java],methods=[POST]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.webank.webase.front.contract.ContractController.compileJavaFile(com.webank.webase.front.contract.entity.ReqSendAbi,org.springframework.validation.BindingResult) throws com.webank.webase.front.base.exception.FrontException,java.io.IOException
+2021-01-27 18:26:20.672 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/contract/{groupId}/{contractId}],methods=[DELETE]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.contract.ContractController.deleteByContractId(java.lang.Integer,java.lang.Long) throws com.webank.webase.front.base.exception.FrontException
+2021-01-27 18:26:20.673 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/contract/contractList],methods=[POST]}" onto public com.webank.webase.front.base.response.BasePageResponse com.webank.webase.front.contract.ContractController.findByPage(com.webank.webase.front.contract.entity.ReqPageContract,org.springframework.validation.BindingResult) throws com.webank.webase.front.base.exception.FrontException,java.io.IOException
+2021-01-27 18:26:20.675 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/contract/ifChanged/{groupId}/{contractId}],methods=[GET]}" onto public boolean com.webank.webase.front.contract.ContractController.ifChanged(java.lang.Integer,java.lang.Long)
+2021-01-27 18:26:20.677 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/contract/deployWithSign],methods=[POST]}" onto public java.lang.String com.webank.webase.front.contract.ContractController.deploy(com.webank.webase.front.contract.entity.ReqDeploy,org.springframework.validation.BindingResult) throws java.lang.Exception
+2021-01-27 18:26:20.681 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/contract/abiInfo],methods=[POST]}" onto public org.springframework.http.ResponseEntity com.webank.webase.front.contract.ContractController.sendAbi(com.webank.webase.front.contract.entity.ReqSendAbi,org.springframework.validation.BindingResult) throws com.webank.webase.front.base.exception.FrontException
+2021-01-27 18:26:20.682 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/contract/deleteAbi/{contractName}/{version:.+}],methods=[DELETE]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.contract.ContractController.deleteAbi(java.lang.String,java.lang.String) throws com.webank.webase.front.base.exception.FrontException
+2021-01-27 18:26:20.683 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/contract/save],methods=[POST]}" onto public com.webank.webase.front.contract.entity.Contract com.webank.webase.front.contract.ContractController.saveContract(com.webank.webase.front.contract.entity.ReqContractSave,org.springframework.validation.BindingResult) throws com.webank.webase.front.base.exception.FrontException
+2021-01-27 18:26:20.686 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/contract/contractCompile],methods=[POST]}" onto public com.webank.webase.front.contract.entity.RspContractCompile com.webank.webase.front.contract.ContractController.contractCompile(com.webank.webase.front.contract.entity.ReqContractCompile,org.springframework.validation.BindingResult) throws com.webank.webase.front.base.exception.FrontException
+2021-01-27 18:26:20.687 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/contract/multiContractCompile],methods=[POST]}" onto public java.util.List<com.webank.webase.front.contract.entity.RspMultiContractCompile> com.webank.webase.front.contract.ContractController.multiContractCompile(com.webank.webase.front.contract.entity.ReqMultiContractCompile,org.springframework.validation.BindingResult) throws com.webank.webase.front.base.exception.FrontException,java.io.IOException
+2021-01-27 18:26:20.687 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/contract/addContractPath],methods=[POST]}" onto public com.webank.webase.front.contract.entity.ContractPath com.webank.webase.front.contract.ContractController.addContractPath(com.webank.webase.front.contract.entity.ReqContractPath)
+2021-01-27 18:26:20.688 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/contract/findPathList/{groupId}],methods=[GET]}" onto public java.util.List<com.webank.webase.front.contract.entity.ContractPath> com.webank.webase.front.contract.ContractController.findPathList(java.lang.Integer)
+2021-01-27 18:26:20.688 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/contract/deletePath/{groupId}/{contractPath}],methods=[DELETE]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.contract.ContractController.deletePath(java.lang.Integer,java.lang.String)
+2021-01-27 18:26:20.693 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/performance],methods=[GET]}" onto public java.util.List<com.webank.webase.front.performance.result.PerformanceData> com.webank.webase.front.performance.PerformanceController.getPerformanceRatio(java.time.LocalDateTime,java.time.LocalDateTime,java.time.LocalDateTime,java.time.LocalDateTime,int) throws java.lang.Exception
+2021-01-27 18:26:20.695 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/performance/pagingQuery],methods=[GET]}" onto public com.webank.webase.front.base.response.BasePageResponse com.webank.webase.front.performance.PerformanceController.getPerformanceByTime(java.lang.Integer,java.lang.Integer,java.time.LocalDateTime,java.time.LocalDateTime) throws java.lang.Exception
+2021-01-27 18:26:20.695 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/performance/config],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.String> com.webank.webase.front.performance.PerformanceController.getPerformanceConfig() throws org.hyperic.sigar.SigarException,java.net.UnknownHostException
+2021-01-27 18:26:20.697 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/performance/toggle],methods=[GET]}" onto public java.lang.Object com.webank.webase.front.performance.PerformanceController.getScheduledStatus() throws java.lang.Exception
+2021-01-27 18:26:20.701 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/performance/toggle],methods=[POST]}" onto public java.lang.Object com.webank.webase.front.performance.PerformanceController.toggleScheduledState(com.webank.webase.front.performance.entity.ToggleHandle) throws java.lang.Exception
+2021-01-27 18:26:20.706 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/privateKey],methods=[GET]}" onto public java.lang.Object com.webank.webase.front.keystore.KeyStoreController.getKeyStore(int,java.lang.String,java.lang.String,java.lang.String)
+2021-01-27 18:26:20.707 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/privateKey/localKeyStores],methods=[GET]}" onto public java.util.List<com.webank.webase.front.keystore.entity.KeyStoreInfo> com.webank.webase.front.keystore.KeyStoreController.getLocalKeyStoreList()
+2021-01-27 18:26:20.709 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/privateKey/{address}],methods=[DELETE]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.keystore.KeyStoreController.deleteKeyStore(java.lang.String)
+2021-01-27 18:26:20.710 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/privateKey/import],methods=[GET]}" onto public com.webank.webase.front.keystore.entity.KeyStoreInfo com.webank.webase.front.keystore.KeyStoreController.importPrivateKey(java.lang.String,java.lang.String)
+2021-01-27 18:26:20.710 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/privateKey/importPem],methods=[POST]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.keystore.KeyStoreController.importPemPrivateKey(com.webank.webase.front.keystore.entity.ReqImportPem)
+2021-01-27 18:26:20.713 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/privateKey/importP12],methods=[POST]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.keystore.KeyStoreController.importP12PrivateKey(java.lang.String,org.springframework.web.multipart.MultipartFile,java.lang.String) throws java.io.IOException
+2021-01-27 18:26:20.717 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/privateKey/importWithSign],methods=[POST]}" onto public com.webank.webase.front.keystore.entity.KeyStoreInfo com.webank.webase.front.keystore.KeyStoreController.importPrivateKeyWithSign(com.webank.webase.front.keystore.entity.ReqImportWithSign)
+2021-01-27 18:26:20.741 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/refresh],methods=[GET]}" onto public void com.webank.webase.front.web3api.Web3ApiController.refresh()
+2021-01-27 18:26:20.742 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/code/{address}/{blockNumber}],methods=[GET]}" onto public java.lang.String com.webank.webase.front.web3api.Web3ApiController.getCode(int,java.lang.String,java.math.BigInteger)
+2021-01-27 18:26:20.742 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/blockNumber],methods=[GET]}" onto public java.math.BigInteger com.webank.webase.front.web3api.Web3ApiController.getBlockNumber(int)
+2021-01-27 18:26:20.744 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/blockByNumber/{blockNumber}],methods=[GET]}" onto public org.fisco.bcos.web3j.protocol.core.methods.response.BcosBlock$Block com.webank.webase.front.web3api.Web3ApiController.getBlockByNumber(int,java.math.BigInteger)
+2021-01-27 18:26:20.744 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/blockByHash/{blockHash}],methods=[GET]}" onto public org.fisco.bcos.web3j.protocol.core.methods.response.BcosBlock$Block com.webank.webase.front.web3api.Web3ApiController.getBlockByHash(int,java.lang.String)
+2021-01-27 18:26:20.748 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/pbftView],methods=[GET]}" onto public java.math.BigInteger com.webank.webase.front.web3api.Web3ApiController.getPbftView(int)
+2021-01-27 18:26:20.749 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/transactionReceipt/{transHash}],methods=[GET]}" onto public org.fisco.bcos.web3j.protocol.core.methods.response.TransactionReceipt com.webank.webase.front.web3api.Web3ApiController.getTransactionReceipt(int,java.lang.String)
+2021-01-27 18:26:20.750 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/transaction/{transHash}],methods=[GET]}" onto public org.fisco.bcos.web3j.protocol.core.methods.response.Transaction com.webank.webase.front.web3api.Web3ApiController.getTransactionByHash(int,java.lang.String)
+2021-01-27 18:26:20.750 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/transaction-total],methods=[GET]}" onto public org.fisco.bcos.web3j.protocol.core.methods.response.TotalTransactionCount$TransactionCount com.webank.webase.front.web3api.Web3ApiController.getTransTotalCnt(int)
+2021-01-27 18:26:20.750 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/pending-transactions-count],methods=[GET]}" onto public int com.webank.webase.front.web3api.Web3ApiController.getPendingTransactionCount(int) throws java.io.IOException
+2021-01-27 18:26:20.751 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/groupPeers],methods=[GET]}" onto public java.util.List<java.lang.String> com.webank.webase.front.web3api.Web3ApiController.getGroupPeers(int)
+2021-01-27 18:26:20.751 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/observerList],methods=[GET]}" onto public java.util.List<java.lang.String> com.webank.webase.front.web3api.Web3ApiController.getObserverList(int) throws java.io.IOException
+2021-01-27 18:26:20.752 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/syncStatus],methods=[GET]}" onto public java.lang.String com.webank.webase.front.web3api.Web3ApiController.getSyncStatus(int)
+2021-01-27 18:26:20.752 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/peers],methods=[GET]}" onto public java.util.List<org.fisco.bcos.web3j.protocol.core.methods.response.Peers$Peer> com.webank.webase.front.web3api.Web3ApiController.getPeers(int)
+2021-01-27 18:26:20.754 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/consensusStatus],methods=[GET]}" onto public java.lang.String com.webank.webase.front.web3api.Web3ApiController.getConsensusStatus(int)
+2021-01-27 18:26:20.755 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/groupList],methods=[GET]}" onto public java.util.List<java.lang.String> com.webank.webase.front.web3api.Web3ApiController.getGroupList()
+2021-01-27 18:26:20.755 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/nodeIdList],methods=[GET]}" onto public java.util.List<java.lang.String> com.webank.webase.front.web3api.Web3ApiController.getNodeIDList() throws java.io.IOException
+2021-01-27 18:26:20.756 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/systemConfigByKey/{key}],methods=[GET]}" onto public java.lang.String com.webank.webase.front.web3api.Web3ApiController.getSystemConfigByKey(int,java.lang.String)
+2021-01-27 18:26:20.756 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/sealerList],methods=[GET]}" onto public java.util.List<java.lang.String> com.webank.webase.front.web3api.Web3ApiController.getSealerList(int) throws java.io.IOException
+2021-01-27 18:26:20.756 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/generateGroup],methods=[POST]}" onto public java.lang.Object com.webank.webase.front.web3api.Web3ApiController.generateGroup(com.webank.webase.front.web3api.entity.GenerateGroupInfo) throws java.io.IOException
+2021-01-27 18:26:20.757 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/blockHeaderByHash/{blockHash}],methods=[GET]}" onto public org.fisco.bcos.web3j.protocol.core.methods.response.BcosBlockHeader com.webank.webase.front.web3api.Web3ApiController.getBlockHeaderByHash(int,java.lang.String) throws java.io.IOException
+2021-01-27 18:26:20.758 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/blockHeaderByNumber/{blockNumber}],methods=[GET]}" onto public org.fisco.bcos.web3j.protocol.core.methods.response.BcosBlockHeader com.webank.webase.front.web3api.Web3ApiController.getBlockHeaderByNumber(int,java.math.BigInteger) throws java.io.IOException
+2021-01-27 18:26:20.760 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/blockTransCnt/{blockNumber}],methods=[GET]}" onto public int com.webank.webase.front.web3api.Web3ApiController.getBlockTransCntByNumber(int,java.math.BigInteger)
+2021-01-27 18:26:20.760 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/clientVersion],methods=[GET]}" onto public org.fisco.bcos.web3j.protocol.core.methods.response.NodeVersion$Version com.webank.webase.front.web3api.Web3ApiController.getClientVersion()
+2021-01-27 18:26:20.761 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/transByBlockHashAndIndex/{blockHash}/{transactionIndex}],methods=[GET]}" onto public org.fisco.bcos.web3j.protocol.core.methods.response.Transaction com.webank.webase.front.web3api.Web3ApiController.getTransByBlockHashAndIndex(int,java.lang.String,java.math.BigInteger)
+2021-01-27 18:26:20.761 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/transByBlockNumberAndIndex/{blockNumber}/{transactionIndex}],methods=[GET]}" onto public org.fisco.bcos.web3j.protocol.core.methods.response.Transaction com.webank.webase.front.web3api.Web3ApiController.getTransByBlockNumberAndIndex(int,java.math.BigInteger,java.math.BigInteger)
+2021-01-27 18:26:20.762 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/getNodeStatusList],methods=[GET]}" onto public java.util.List<com.webank.webase.front.web3api.entity.NodeStatusInfo> com.webank.webase.front.web3api.Web3ApiController.getNodeStatusList(int)
+2021-01-27 18:26:20.762 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/nodeInfo],methods=[GET]}" onto public java.lang.Object com.webank.webase.front.web3api.Web3ApiController.getNodeInfo()
+2021-01-27 18:26:20.766 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/search],methods=[GET]}" onto public java.lang.Object com.webank.webase.front.web3api.Web3ApiController.searchByCriteria(int,java.lang.String)
+2021-01-27 18:26:20.766 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/operateGroup/{type}],methods=[GET]}" onto public java.lang.Object com.webank.webase.front.web3api.Web3ApiController.operateGroup(int,java.lang.String) throws java.io.IOException
+2021-01-27 18:26:20.766 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/{groupId}/web3/queryGroupStatus],methods=[POST]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.web3api.Web3ApiController.getGroupStatus(com.webank.webase.front.web3api.entity.ReqGroupStatus) throws java.io.IOException
+2021-01-27 18:26:20.767 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/version],methods=[GET]}" onto public java.lang.String com.webank.webase.front.version.VersionController.getServerVersion()
+2021-01-27 18:26:20.768 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/version/sign],methods=[GET]}" onto public java.lang.String com.webank.webase.front.version.VersionController.getSignVersion()
+2021-01-27 18:26:20.768 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/encrypt],methods=[GET]}" onto public java.lang.Integer com.webank.webase.front.gm.EncryptTypeController.getEncryptType()
+2021-01-27 18:26:20.775 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/trans/handle],methods=[POST]}" onto public java.lang.Object com.webank.webase.front.transaction.TransController.transHandleLocal(com.webank.webase.front.transaction.entity.ReqTransHandle,org.springframework.validation.BindingResult)
+2021-01-27 18:26:20.775 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/trans/signed-transaction],methods=[POST]}" onto public org.fisco.bcos.web3j.protocol.core.methods.response.TransactionReceipt com.webank.webase.front.transaction.TransController.sendSignedTransaction(com.webank.webase.front.transaction.entity.ReqSignedTransHandle,org.springframework.validation.BindingResult) throws java.lang.Exception
+2021-01-27 18:26:20.775 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/trans/query-transaction],methods=[POST]}" onto public java.lang.Object com.webank.webase.front.transaction.TransController.sendQueryTransaction(com.webank.webase.front.transaction.entity.ReqQueryTransHandle,org.springframework.validation.BindingResult)
+2021-01-27 18:26:20.777 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/trans/handleWithSign],methods=[POST]}" onto public java.lang.Object com.webank.webase.front.transaction.TransController.transHandle(com.webank.webase.front.transaction.entity.ReqTransHandleWithSign,org.springframework.validation.BindingResult) throws java.lang.Exception
+2021-01-27 18:26:20.780 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/charging/deleteData],methods=[DELETE]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.logparse.LogParseController.deleteData(int,int,java.time.LocalDateTime)
+2021-01-27 18:26:20.781 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/charging/getNetWorkData],methods=[GET]}" onto public com.webank.webase.front.base.response.BasePageResponse com.webank.webase.front.logparse.LogParseController.getNetWorkData(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.time.LocalDateTime,java.time.LocalDateTime)
+2021-01-27 18:26:20.782 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/charging/getTxGasData],methods=[GET]}" onto public com.webank.webase.front.base.response.BasePageResponse com.webank.webase.front.logparse.LogParseController.getTxGasData(int,java.lang.Integer,java.lang.Integer,java.time.LocalDateTime,java.time.LocalDateTime,java.lang.String)
+2021-01-27 18:26:20.790 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/abi/{abiId}],methods=[DELETE]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.abi.AbiController.deleteAbi(java.lang.Long)
+2021-01-27 18:26:20.791 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/abi/{abiId}],methods=[GET]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.abi.AbiController.getAbiById(java.lang.Long)
+2021-01-27 18:26:20.793 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/abi/list/{groupId}/{pageNumber}/{pageSize}],methods=[GET]}" onto public com.webank.webase.front.base.response.BasePageResponse com.webank.webase.front.abi.AbiController.getAbiListByGroupId(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2021-01-27 18:26:20.794 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/abi],methods=[POST]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.abi.AbiController.importAbi(com.webank.webase.front.abi.entity.ReqImportAbi,org.springframework.validation.BindingResult)
+2021-01-27 18:26:20.795 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/abi],methods=[PUT]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.abi.AbiController.updateAbi(com.webank.webase.front.abi.entity.ReqImportAbi,org.springframework.validation.BindingResult)
+2021-01-27 18:26:20.796 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/chain/pagingQuery],methods=[GET]}" onto public com.webank.webase.front.base.response.BasePageResponse com.webank.webase.front.monitor.MonitorController.pagingQuery(int,java.lang.Integer,java.lang.Integer,java.time.LocalDateTime,java.time.LocalDateTime)
+2021-01-27 18:26:20.799 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/chain/getGroupSizeInfos],methods=[GET]}" onto public java.util.List<com.webank.webase.front.monitor.entity.GroupSizeInfo> com.webank.webase.front.monitor.MonitorController.getGroupSizeInfos()
+2021-01-27 18:26:20.799 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/chain],methods=[GET]}" onto public java.util.List<com.webank.webase.front.performance.result.PerformanceData> com.webank.webase.front.monitor.MonitorController.getChainMonitor(java.time.LocalDateTime,java.time.LocalDateTime,java.time.LocalDateTime,java.time.LocalDateTime,int,int)
+2021-01-27 18:26:20.802 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/chain/checkNodeProcess],methods=[GET]}" onto public boolean com.webank.webase.front.monitor.MonitorController.checkNodeProcess()
+2021-01-27 18:26:20.803 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/solc/upload],methods=[POST]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.solc.SolcController.upload(java.lang.String,org.springframework.web.multipart.MultipartFile,java.lang.String) throws java.io.IOException
+2021-01-27 18:26:20.805 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/solc/list],methods=[GET]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.solc.SolcController.getSolcList()
+2021-01-27 18:26:20.808 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/solc/{solcId}],methods=[DELETE]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.solc.SolcController.deleteSolcFile(java.lang.Integer)
+2021-01-27 18:26:20.810 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/solc/download],methods=[POST]}" onto public org.springframework.http.ResponseEntity<org.springframework.core.io.InputStreamResource> com.webank.webase.front.solc.SolcController.downloadSolcFile(java.lang.String)
+2021-01-27 18:26:20.818 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/governance/threshold],methods=[GET]}" onto public java.math.BigInteger com.webank.webase.front.precompiledapi.permission.ChainGovernController.queryThreshold(java.lang.Integer) throws java.lang.Exception
+2021-01-27 18:26:20.820 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/governance/operator/list],methods=[GET]}" onto public java.util.List<org.fisco.bcos.web3j.precompile.permission.PermissionInfo> com.webank.webase.front.precompiledapi.permission.ChainGovernController.listOperator(java.lang.Integer) throws java.lang.Exception
+2021-01-27 18:26:20.822 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/governance/account/status],methods=[GET]}" onto public java.lang.String com.webank.webase.front.precompiledapi.permission.ChainGovernController.getAccountStatus(java.lang.Integer,java.lang.String) throws java.lang.Exception
+2021-01-27 18:26:20.823 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/governance/committee/list],methods=[GET]}" onto public java.util.List<org.fisco.bcos.web3j.precompile.permission.PermissionInfo> com.webank.webase.front.precompiledapi.permission.ChainGovernController.listCommittee(java.lang.Integer) throws java.lang.Exception
+2021-01-27 18:26:20.823 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/governance/committee],methods=[POST]}" onto public java.lang.String com.webank.webase.front.precompiledapi.permission.ChainGovernController.grantCommittee(com.webank.webase.front.precompiledapi.entity.ChainGovernanceHandle) throws java.lang.Exception
+2021-01-27 18:26:20.824 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/governance/committee],methods=[DELETE]}" onto public java.lang.String com.webank.webase.front.precompiledapi.permission.ChainGovernController.revokeCommittee(com.webank.webase.front.precompiledapi.entity.ChainGovernanceHandle) throws java.lang.Exception
+2021-01-27 18:26:20.824 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/governance/committee/weight],methods=[GET]}" onto public java.math.BigInteger com.webank.webase.front.precompiledapi.permission.ChainGovernController.queryCommitteeWeight(java.lang.Integer,java.lang.String) throws java.lang.Exception
+2021-01-27 18:26:20.825 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/governance/committee/weight],methods=[POST]}" onto public java.lang.String com.webank.webase.front.precompiledapi.permission.ChainGovernController.updateCommitteeWeight(com.webank.webase.front.precompiledapi.entity.ChainGovernanceHandle)
+2021-01-27 18:26:20.825 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/governance/threshold],methods=[POST]}" onto public java.lang.String com.webank.webase.front.precompiledapi.permission.ChainGovernController.updateThreshold(com.webank.webase.front.precompiledapi.entity.ChainGovernanceHandle) throws java.lang.Exception
+2021-01-27 18:26:20.825 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/governance/operator],methods=[POST]}" onto public java.lang.String com.webank.webase.front.precompiledapi.permission.ChainGovernController.grantOperator(com.webank.webase.front.precompiledapi.entity.ChainGovernanceHandle) throws java.lang.Exception
+2021-01-27 18:26:20.825 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/governance/operator],methods=[DELETE]}" onto public java.lang.String com.webank.webase.front.precompiledapi.permission.ChainGovernController.revokeOperator(com.webank.webase.front.precompiledapi.entity.ChainGovernanceHandle) throws java.lang.Exception
+2021-01-27 18:26:20.828 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/governance/account/freeze],methods=[POST]}" onto public java.lang.String com.webank.webase.front.precompiledapi.permission.ChainGovernController.freezeAccount(com.webank.webase.front.precompiledapi.entity.ChainGovernanceHandle) throws java.lang.Exception
+2021-01-27 18:26:20.828 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/governance/account/unfreeze],methods=[DELETE]}" onto public java.lang.String com.webank.webase.front.precompiledapi.permission.ChainGovernController.unfreezeAccount(com.webank.webase.front.precompiledapi.entity.ChainGovernanceHandle) throws java.lang.Exception
+2021-01-27 18:26:20.832 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/permission],methods=[GET]}" onto public java.lang.Object com.webank.webase.front.precompiledapi.permission.PermissionManageController.permissionGetControl(int,java.lang.String,java.lang.String,int,int) throws java.lang.Exception
+2021-01-27 18:26:20.834 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/permission/full],methods=[GET]}" onto public java.lang.Object com.webank.webase.front.precompiledapi.permission.PermissionManageController.getFullListByType(int,java.lang.String,java.lang.String) throws java.lang.Exception
+2021-01-27 18:26:20.834 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/permission/sorted/full],methods=[GET]}" onto public com.webank.webase.front.base.response.BasePageResponse com.webank.webase.front.precompiledapi.permission.PermissionManageController.gerPermissionStateFull(int) throws java.lang.Exception
+2021-01-27 18:26:20.835 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/permission/sorted],methods=[POST]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.precompiledapi.permission.PermissionManageController.updateUserPermissionStateAfterCheck(com.webank.webase.front.precompiledapi.entity.PermissionHandle) throws java.lang.Exception
+2021-01-27 18:26:20.835 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/permission],methods=[POST]}" onto public java.lang.Object com.webank.webase.front.precompiledapi.permission.PermissionManageController.permissionPostControl(com.webank.webase.front.precompiledapi.entity.PermissionHandle) throws java.lang.Exception
+2021-01-27 18:26:20.836 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/permission],methods=[DELETE]}" onto public java.lang.Object com.webank.webase.front.precompiledapi.permission.PermissionManageController.permissionDeleteControl(com.webank.webase.front.precompiledapi.entity.PermissionHandle) throws java.lang.Exception
+2021-01-27 18:26:20.840 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/precompiled/consensus/list],methods=[GET]}" onto public java.lang.Object com.webank.webase.front.precompiledapi.PrecompiledController.getNodeList(int,int,int) throws java.lang.Exception
+2021-01-27 18:26:20.841 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/precompiled/cns/list],methods=[GET]}" onto public java.lang.Object com.webank.webase.front.precompiledapi.PrecompiledController.queryCns(int,java.lang.String,int,int) throws java.lang.Exception
+2021-01-27 18:26:20.842 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/precompiled/consensus],methods=[POST]}" onto public java.lang.Object com.webank.webase.front.precompiledapi.PrecompiledController.nodeManageControl(com.webank.webase.front.precompiledapi.entity.ConsensusHandle) throws java.lang.Exception
+2021-01-27 18:26:20.842 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/precompiled/crud],methods=[POST]}" onto public java.lang.Object com.webank.webase.front.precompiledapi.PrecompiledController.crudManageControl(com.webank.webase.front.precompiledapi.entity.CrudHandle) throws java.lang.Exception
+2021-01-27 18:26:20.842 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/precompiled/contractStatusManage],methods=[POST]}" onto public java.lang.Object com.webank.webase.front.precompiledapi.PrecompiledController.contractStatusManage(com.webank.webase.front.precompiledapi.entity.ContractStatusHandle) throws java.lang.Exception
+2021-01-27 18:26:20.844 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/sys/config],methods=[POST]}" onto public java.lang.Object com.webank.webase.front.precompiledapi.sysconf.PrecompiledSysConfigController.setSysConfigValueByKey(com.webank.webase.front.precompiledapi.entity.SystemConfigHandle) throws java.lang.Exception
+2021-01-27 18:26:20.845 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/sys/config/list],methods=[GET]}" onto public java.lang.Object com.webank.webase.front.precompiledapi.sysconf.PrecompiledSysConfigController.querySystemConfigByGroupId(int,int,int) throws java.lang.Exception
+2021-01-27 18:26:20.849 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/event/newBlockEvent],methods=[POST]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.event.EventController.registerNewBlockEvent(com.webank.webase.front.event.entity.ReqNewBlockEventRegister,org.springframework.validation.BindingResult)
+2021-01-27 18:26:20.858 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/event/contractEvent],methods=[POST]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.event.EventController.registerContractEvent(com.webank.webase.front.event.entity.ReqContractEventRegister,org.springframework.validation.BindingResult)
+2021-01-27 18:26:20.858 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/event/contractEvent/list/{groupId}/{pageNumber}/{pageSize} || /event/contractEvent/list/{groupId}],methods=[GET]}" onto public com.webank.webase.front.base.response.BasePageResponse com.webank.webase.front.event.EventController.getContractEventInfo(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2021-01-27 18:26:20.859 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/event/contractEvent],methods=[DELETE]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.event.EventController.unregisterContractEvent(com.webank.webase.front.event.entity.ReqUnregister)
+2021-01-27 18:26:20.859 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/event/newBlockEvent/{groupId}/{appId}],methods=[GET]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.event.EventController.getNewBlockEventByAppId(int,java.lang.String)
+2021-01-27 18:26:20.859 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/event/newBlockEvent/list/{groupId}/{pageNumber}/{pageSize} || /event/newBlockEvent/list/{groupId}],methods=[GET]}" onto public com.webank.webase.front.base.response.BasePageResponse com.webank.webase.front.event.EventController.getNewBlockEventInfo(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+2021-01-27 18:26:20.861 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/event/newBlockEvent],methods=[DELETE]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.event.EventController.unregisterNewBlockEvent(com.webank.webase.front.event.entity.ReqUnregister)
+2021-01-27 18:26:20.861 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/event/contractEvent/{groupId}/{appId}],methods=[GET]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.event.EventController.getContractEventByAppId(int,java.lang.String)
+2021-01-27 18:26:20.865 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/cert],methods=[GET]}" onto public java.lang.Object com.webank.webase.front.cert.FrontCertController.getFrontCerts()
+2021-01-27 18:26:20.866 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/method/add],methods=[POST]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.method.MethodController.addMethod(com.webank.webase.front.method.entity.NewMethodInputParamHandle,org.springframework.validation.BindingResult) throws com.webank.webase.front.base.exception.FrontException
+2021-01-27 18:26:20.867 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/method/findById/{groupId}/{methodId}],methods=[GET]}" onto public com.webank.webase.front.base.response.BaseResponse com.webank.webase.front.method.MethodController.getBymethodId(java.lang.Integer,java.lang.String)
+2021-01-27 18:26:20.873 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-01-27 18:26:20.874 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-01-27 18:26:20.877 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-01-27 18:26:20.882 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-01-27 18:26:20.883 [main] INFO  RequestMappingHandlerMapping() - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-01-27 18:26:21.430 [main] INFO  PropertySourcedRequestMappingHandlerMapping() - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2021-01-27 18:26:21.993 [main] INFO  RequestMappingHandlerAdapter() - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c9168dc: startup date [Wed Jan 27 18:25:57 CST 2021]; root of context hierarchy
+2021-01-27 18:26:22.108 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/solcjs/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-27 18:26:22.108 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-27 18:26:22.108 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-27 18:26:22.149 [main] INFO  ExceptionHandlerExceptionResolver() - Detected @ExceptionHandler methods in exceptionsHandler
+2021-01-27 18:26:22.195 [main] INFO  SimpleUrlHandlerMapping() - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-01-27 18:26:22.385 [main] INFO  WebMvcAutoConfiguration$WelcomePageHandlerMapping() - Adding welcome page: ServletContext resource [/index.html]
+2021-01-27 18:26:23.036 [main] INFO  AnnotationMBeanExporter() - Registering beans for JMX exposure on startup
+2021-01-27 18:26:23.062 [main] INFO  AnnotationMBeanExporter() - Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2021-01-27 18:26:23.068 [main] INFO  AnnotationMBeanExporter() - Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2021-01-27 18:26:23.354 [main] INFO  DefaultLifecycleProcessor() - Starting beans in phase 2147483647
+2021-01-27 18:26:23.354 [main] INFO  DocumentationPluginsBootstrapper() - Context refreshed
+2021-01-27 18:26:23.542 [main] INFO  DocumentationPluginsBootstrapper() - Found 1 custom documentation plugin(s)
+2021-01-27 18:26:23.631 [main] INFO  ApiListingReferenceScanner() - Scanning for api listing references
+2021-01-27 18:26:24.144 [main] INFO  CachingOperationNameGenerator() - Generating unique operation named: deleteAbiUsingDELETE_1
+2021-01-27 18:26:24.336 [main] INFO  CachingOperationNameGenerator() - Generating unique operation named: getContractEventInfoUsingGET_1
+2021-01-27 18:26:24.354 [main] INFO  CachingOperationNameGenerator() - Generating unique operation named: getNewBlockEventInfoUsingGET_1
+2021-01-27 18:26:25.061 [main] INFO  ScheduledAnnotationBeanPostProcessor() - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2021-01-27 18:26:25.348 [main] INFO  TomcatEmbeddedServletContainer() - Tomcat started on port(s): 5002 (http)
+2021-01-27 18:26:25.368 [main] INFO  Application() - Started Application in 28.786 seconds (JVM running for 30.999)
+2021-01-27 18:26:25.368 [main] INFO  Application() - main run success...
+2021-01-27 18:29:31.069 [http-nio-5002-exec-3] INFO  DispatcherServlet() - FrameworkServlet 'dispatcherServlet': initialization started
+2021-01-27 18:29:31.133 [http-nio-5002-exec-3] INFO  DispatcherServlet() - FrameworkServlet 'dispatcherServlet': initialization completed in 64 ms
+2021-01-27 18:29:34.269 [http-nio-5002-exec-3] INFO  EncryptTypeController() - getEncryptType:0
+2021-01-27 18:29:51.499 [http-nio-5002-exec-6] INFO  EncryptTypeController() - getEncryptType:0
+2021-01-27 18:29:51.592 [http-nio-5002-exec-8] INFO  ContractController() - findByPage start. ReqPageContract:{"groupId":1,"contractName":null,"contractAddress":null,"contractStatus":null,"pageNumber":1,"pageSize":500}
+2021-01-27 18:29:52.098 [http-nio-5002-exec-5] INFO  ContractController() - findByPage start. ReqPageContract:{"groupId":1,"contractName":"","contractAddress":"","contractStatus":2,"pageNumber":1,"pageSize":10}
+2021-01-27 18:29:54.148 [http-nio-5002-exec-3] INFO  EncryptTypeController() - getEncryptType:0
+2021-01-27 18:29:54.162 [http-nio-5002-exec-10] INFO  ContractController() - findByPage start. ReqPageContract:{"groupId":1,"contractName":null,"contractAddress":null,"contractStatus":null,"pageNumber":1,"pageSize":500}
