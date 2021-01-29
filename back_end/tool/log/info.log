@@ -1,0 +1,388 @@
+[2021-01-29 17:12:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:12:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:12:01] [INFO]  execute cmd  start ,cmd : which git
+[2021-01-29 17:12:01] [INFO]  execute cmd  end ,cmd : which git,status :0 , output: /usr/bin/git
+[2021-01-29 17:12:01] [INFO]  execute cmd  start ,cmd : which openssl
+[2021-01-29 17:12:01] [INFO]  execute cmd  end ,cmd : which openssl,status :0 , output: /usr/bin/openssl
+[2021-01-29 17:12:01] [INFO]  execute cmd  start ,cmd : which curl
+[2021-01-29 17:12:01] [INFO]  execute cmd  end ,cmd : which curl,status :0 , output: /usr/bin/curl
+[2021-01-29 17:12:01] [INFO]  execute cmd  start ,cmd : which wget
+[2021-01-29 17:12:01] [INFO]  execute cmd  end ,cmd : which wget,status :0 , output: /usr/bin/wget
+[2021-01-29 17:12:01] [INFO]  execute cmd  start ,cmd : which dos2unix
+[2021-01-29 17:12:01] [INFO]  execute cmd  end ,cmd : which dos2unix,status :1 , output: 
+[2021-01-29 17:12:39] [INFO]  execute cmd  start ,cmd : which nginx
+[2021-01-29 17:12:39] [INFO]  execute cmd  end ,cmd : which nginx,status :1 , output: 
+[2021-01-29 17:13:08] [INFO]  execute cmd  start ,cmd : java -version
+[2021-01-29 17:13:08] [INFO]  execute cmd  end ,cmd : java -version,status :0 , output: openjdk version "11.0.9.1" 2020-11-04
+OpenJDK Runtime Environment (build 11.0.9.1+1-Ubuntu-0ubuntu1.18.04)
+OpenJDK 64-Bit Server VM (build 11.0.9.1+1-Ubuntu-0ubuntu1.18.04, mixed mode, sharing)
+[2021-01-29 17:13:08] [INFO]  execute cmd  start ,cmd : echo $JAVA_HOME
+[2021-01-29 17:13:08] [INFO]  execute cmd  end ,cmd : echo $JAVA_HOME,status :0 , output: /usr/lib/jvm/java-11-openjdk-amd64
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO] check mgr database user/password...
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:13:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:13:08] [INFO] mgr mysql user/password error Traceback (most recent call last):
+  File "/home/liuhz/webase-deploy/comm/mysql.py", line 140, in checkMgrDbAuthorized
+    conn = mdb.connect(host=mysql_ip, port=mysql_port, user=mysql_user, passwd=mysql_password)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 633, in connect
+    self._request_authentication()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 907, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'dbUsername'@'localhost' (using password: YES)")
+
+[2021-01-29 17:14:05] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:05] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:05] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:05] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:05] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:05] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  execute cmd  start ,cmd : which git
+[2021-01-29 17:14:43] [INFO]  execute cmd  end ,cmd : which git,status :0 , output: /usr/bin/git
+[2021-01-29 17:14:43] [INFO]  execute cmd  start ,cmd : which openssl
+[2021-01-29 17:14:43] [INFO]  execute cmd  end ,cmd : which openssl,status :0 , output: /usr/bin/openssl
+[2021-01-29 17:14:43] [INFO]  execute cmd  start ,cmd : which curl
+[2021-01-29 17:14:43] [INFO]  execute cmd  end ,cmd : which curl,status :0 , output: /usr/bin/curl
+[2021-01-29 17:14:43] [INFO]  execute cmd  start ,cmd : which wget
+[2021-01-29 17:14:43] [INFO]  execute cmd  end ,cmd : which wget,status :0 , output: /usr/bin/wget
+[2021-01-29 17:14:43] [INFO]  execute cmd  start ,cmd : which dos2unix
+[2021-01-29 17:14:43] [INFO]  execute cmd  end ,cmd : which dos2unix,status :0 , output: /usr/bin/dos2unix
+[2021-01-29 17:14:43] [INFO]  execute cmd  start ,cmd : which nginx
+[2021-01-29 17:14:43] [INFO]  execute cmd  end ,cmd : which nginx,status :0 , output: /usr/sbin/nginx
+[2021-01-29 17:14:43] [INFO]  execute cmd  start ,cmd : java -version
+[2021-01-29 17:14:43] [INFO]  execute cmd  end ,cmd : java -version,status :0 , output: openjdk version "11.0.9.1" 2020-11-04
+OpenJDK Runtime Environment (build 11.0.9.1+1-Ubuntu-0ubuntu1.18.04)
+OpenJDK 64-Bit Server VM (build 11.0.9.1+1-Ubuntu-0ubuntu1.18.04, mixed mode, sharing)
+[2021-01-29 17:14:43] [INFO]  execute cmd  start ,cmd : echo $JAVA_HOME
+[2021-01-29 17:14:43] [INFO]  execute cmd  end ,cmd : echo $JAVA_HOME,status :0 , output: /usr/lib/jvm/java-11-openjdk-amd64
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO] check mgr database user/password...
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:43] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:14:43] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:14:44] [INFO] mgr mysql user/password error Traceback (most recent call last):
+  File "/home/liuhz/webase-deploy/comm/mysql.py", line 140, in checkMgrDbAuthorized
+    conn = mdb.connect(host=mysql_ip, port=mysql_port, user=mysql_user, passwd=mysql_password)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 633, in connect
+    self._request_authentication()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 907, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'dbUsername'@'localhost' (using password: YES)")
+
+[2021-01-29 17:16:05] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:16:05] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:16:05] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:16:05] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:16:05] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:16:05] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:00] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:00] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:00] [INFO]  execute cmd  start ,cmd : which git
+[2021-01-29 17:21:00] [INFO]  execute cmd  end ,cmd : which git,status :0 , output: /usr/bin/git
+[2021-01-29 17:21:00] [INFO]  execute cmd  start ,cmd : which openssl
+[2021-01-29 17:21:00] [INFO]  execute cmd  end ,cmd : which openssl,status :0 , output: /usr/bin/openssl
+[2021-01-29 17:21:00] [INFO]  execute cmd  start ,cmd : which curl
+[2021-01-29 17:21:00] [INFO]  execute cmd  end ,cmd : which curl,status :0 , output: /usr/bin/curl
+[2021-01-29 17:21:00] [INFO]  execute cmd  start ,cmd : which wget
+[2021-01-29 17:21:00] [INFO]  execute cmd  end ,cmd : which wget,status :0 , output: /usr/bin/wget
+[2021-01-29 17:21:00] [INFO]  execute cmd  start ,cmd : which dos2unix
+[2021-01-29 17:21:00] [INFO]  execute cmd  end ,cmd : which dos2unix,status :0 , output: /usr/bin/dos2unix
+[2021-01-29 17:21:00] [INFO]  execute cmd  start ,cmd : which nginx
+[2021-01-29 17:21:00] [INFO]  execute cmd  end ,cmd : which nginx,status :0 , output: /usr/sbin/nginx
+[2021-01-29 17:21:00] [INFO]  execute cmd  start ,cmd : java -version
+[2021-01-29 17:21:01] [INFO]  execute cmd  end ,cmd : java -version,status :0 , output: openjdk version "11.0.9.1" 2020-11-04
+OpenJDK Runtime Environment (build 11.0.9.1+1-Ubuntu-0ubuntu1.18.04)
+OpenJDK 64-Bit Server VM (build 11.0.9.1+1-Ubuntu-0ubuntu1.18.04, mixed mode, sharing)
+[2021-01-29 17:21:01] [INFO]  execute cmd  start ,cmd : echo $JAVA_HOME
+[2021-01-29 17:21:01] [INFO]  execute cmd  end ,cmd : echo $JAVA_HOME,status :0 , output: /usr/lib/jvm/java-11-openjdk-amd64
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO] check mgr database user/password...
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:21:01] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:21:01] [INFO] mgr mysql user/password error Traceback (most recent call last):
+  File "/home/liuhz/webase-deploy/comm/mysql.py", line 140, in checkMgrDbAuthorized
+    conn = mdb.connect(host=mysql_ip, port=mysql_port, user=mysql_user, passwd=mysql_password)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 633, in connect
+    self._request_authentication()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 907, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'dbUsername'@'localhost' (using password: YES)")
+
+[2021-01-29 17:29:03] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:03] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:03] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:03] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:03] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:03] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  execute cmd  start ,cmd : which git
+[2021-01-29 17:29:08] [INFO]  execute cmd  end ,cmd : which git,status :0 , output: /usr/bin/git
+[2021-01-29 17:29:08] [INFO]  execute cmd  start ,cmd : which openssl
+[2021-01-29 17:29:08] [INFO]  execute cmd  end ,cmd : which openssl,status :0 , output: /usr/bin/openssl
+[2021-01-29 17:29:08] [INFO]  execute cmd  start ,cmd : which curl
+[2021-01-29 17:29:08] [INFO]  execute cmd  end ,cmd : which curl,status :0 , output: /usr/bin/curl
+[2021-01-29 17:29:08] [INFO]  execute cmd  start ,cmd : which wget
+[2021-01-29 17:29:08] [INFO]  execute cmd  end ,cmd : which wget,status :0 , output: /usr/bin/wget
+[2021-01-29 17:29:08] [INFO]  execute cmd  start ,cmd : which dos2unix
+[2021-01-29 17:29:08] [INFO]  execute cmd  end ,cmd : which dos2unix,status :0 , output: /usr/bin/dos2unix
+[2021-01-29 17:29:08] [INFO]  execute cmd  start ,cmd : which nginx
+[2021-01-29 17:29:08] [INFO]  execute cmd  end ,cmd : which nginx,status :0 , output: /usr/sbin/nginx
+[2021-01-29 17:29:08] [INFO]  execute cmd  start ,cmd : java -version
+[2021-01-29 17:29:08] [INFO]  execute cmd  end ,cmd : java -version,status :0 , output: openjdk version "11.0.9.1" 2020-11-04
+OpenJDK Runtime Environment (build 11.0.9.1+1-Ubuntu-0ubuntu1.18.04)
+OpenJDK 64-Bit Server VM (build 11.0.9.1+1-Ubuntu-0ubuntu1.18.04, mixed mode, sharing)
+[2021-01-29 17:29:08] [INFO]  execute cmd  start ,cmd : echo $JAVA_HOME
+[2021-01-29 17:29:08] [INFO]  execute cmd  end ,cmd : echo $JAVA_HOME,status :0 , output: /usr/lib/jvm/java-11-openjdk-amd64
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO] check mgr database user/password...
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:29:08] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:29:08] [INFO] mgr mysql user/password error Traceback (most recent call last):
+  File "/home/liuhz/webase-deploy/comm/mysql.py", line 140, in checkMgrDbAuthorized
+    conn = mdb.connect(host=mysql_ip, port=mysql_port, user=mysql_user, passwd=mysql_password)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 633, in connect
+    self._request_authentication()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 907, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'dbUsername'@'localhost' (using password: YES)")
+
+[2021-01-29 17:32:21] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:21] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:21] [INFO]  execute cmd  start ,cmd : which git
+[2021-01-29 17:32:21] [INFO]  execute cmd  end ,cmd : which git,status :0 , output: /usr/bin/git
+[2021-01-29 17:32:21] [INFO]  execute cmd  start ,cmd : which openssl
+[2021-01-29 17:32:21] [INFO]  execute cmd  end ,cmd : which openssl,status :0 , output: /usr/bin/openssl
+[2021-01-29 17:32:21] [INFO]  execute cmd  start ,cmd : which curl
+[2021-01-29 17:32:21] [INFO]  execute cmd  end ,cmd : which curl,status :0 , output: /usr/bin/curl
+[2021-01-29 17:32:21] [INFO]  execute cmd  start ,cmd : which wget
+[2021-01-29 17:32:21] [INFO]  execute cmd  end ,cmd : which wget,status :0 , output: /usr/bin/wget
+[2021-01-29 17:32:21] [INFO]  execute cmd  start ,cmd : which dos2unix
+[2021-01-29 17:32:21] [INFO]  execute cmd  end ,cmd : which dos2unix,status :0 , output: /usr/bin/dos2unix
+[2021-01-29 17:32:21] [INFO]  execute cmd  start ,cmd : which nginx
+[2021-01-29 17:32:21] [INFO]  execute cmd  end ,cmd : which nginx,status :0 , output: /usr/sbin/nginx
+[2021-01-29 17:32:21] [INFO]  execute cmd  start ,cmd : java -version
+[2021-01-29 17:32:22] [INFO]  execute cmd  end ,cmd : java -version,status :0 , output: openjdk version "11.0.9.1" 2020-11-04
+OpenJDK Runtime Environment (build 11.0.9.1+1-Ubuntu-0ubuntu1.18.04)
+OpenJDK 64-Bit Server VM (build 11.0.9.1+1-Ubuntu-0ubuntu1.18.04, mixed mode, sharing)
+[2021-01-29 17:32:22] [INFO]  execute cmd  start ,cmd : echo $JAVA_HOME
+[2021-01-29 17:32:22] [INFO]  execute cmd  end ,cmd : echo $JAVA_HOME,status :0 , output: /usr/lib/jvm/java-11-openjdk-amd64
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO] check mgr database user/password...
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO]   os.getcwd() is /home/liuhz/webase-deploy
+[2021-01-29 17:32:22] [INFO]  commProperties is /home/liuhz/webase-deploy/common.properties 
+[2021-01-29 17:32:22] [INFO] mgr mysql user/password error Traceback (most recent call last):
+  File "/home/liuhz/webase-deploy/comm/mysql.py", line 140, in checkMgrDbAuthorized
+    conn = mdb.connect(host=mysql_ip, port=mysql_port, user=mysql_user, passwd=mysql_password)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 353, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 633, in connect
+    self._request_authentication()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 907, in _request_authentication
+    auth_packet = self._read_packet()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.6/dist-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1045, "Access denied for user 'dbUsername'@'localhost' (using password: YES)")
+
